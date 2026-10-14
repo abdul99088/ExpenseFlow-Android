@@ -1,0 +1,37 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# Android and Gradle generated files
+**/build/
+**/.gradle/
+.kotlin/
+
+# Local machine configuration
+local.properties
+
+# Generated APKs and signing credentials
+*.apk
+*.aab
+*.jks
+*.keystore
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# Android Studio local project settings
+.idea/
