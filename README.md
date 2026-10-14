@@ -114,4 +114,9 @@ Expense records are stored locally using Room. Receipt text recognition and cate
 
 Computer Engineering student interested in AI/ML, applied machine learning, and practical software engineering.
 
-- GitHub: [@
+- GitHub: [@abdul99088](https://github.com/abdul99088)
+- Project: [ExpenseFlow-Android](https://github.com/abdul99088/ExpenseFlow-Android)
+
+---
+
+*ExpenseFlow is a learning and portfolio project. Predictions may be incorrect, and financial records should be verified when accuracy matters.*
