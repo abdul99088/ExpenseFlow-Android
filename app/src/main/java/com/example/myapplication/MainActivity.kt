@@ -1,4 +1,4 @@
-package com.example.myapplication
+﻿package com.example.myapplication
 
 import android.Manifest
 import android.content.pm.PackageManager
@@ -521,7 +521,7 @@ fun HomeScreen(
                 onClick = onScanReceipt,
                 modifier = Modifier.fillMaxWidth()
             ) {
-                Text(text = "📷 Scan Receipt")
+                Text(text = "ðŸ“· Scan Receipt")
             }
         }
 
@@ -530,7 +530,7 @@ fun HomeScreen(
                 onClick = onAddManual,
                 modifier = Modifier.fillMaxWidth()
             ) {
-                Text(text = "✏️ Add Expense Manually")
+                Text(text = "âœï¸ Add Expense Manually")
             }
         }
 
@@ -620,7 +620,7 @@ fun ReceiptScreen(
             onClick = onChoosePhoto,
             modifier = Modifier.fillMaxWidth()
         ) {
-            Text(text = "📷 Choose Receipt Photo")
+            Text(text = "ðŸ“· Choose Receipt Photo")
         }
 
         Spacer(modifier = Modifier.height(12.dp))
@@ -653,7 +653,7 @@ fun ReceiptScreen(
             Card(modifier = Modifier.fillMaxWidth()) {
                 Column(modifier = Modifier.padding(16.dp)) {
 
-                    Text(text = "OCR Text ✓")
+                    Text(text = "OCR Text âœ“")
                     Spacer(modifier = Modifier.height(8.dp))
                     HorizontalDivider()
                     Spacer(modifier = Modifier.height(8.dp))
@@ -988,7 +988,7 @@ fun ScreenHeader(
         verticalAlignment = Alignment.CenterVertically
     ) {
         TextButton(onClick = onBack) {
-            Text(text = "← Back")
+            Text(text = "â† Back")
         }
         Text(
             text = title,
@@ -1013,7 +1013,7 @@ fun ReceiptReviewCard(
 
         Column(modifier = Modifier.padding(16.dp)) {
 
-            Text(text = "Receipt Detected ✓")
+            Text(text = "Receipt Detected âœ“")
             Spacer(modifier = Modifier.height(6.dp))
             HorizontalDivider()
             Spacer(modifier = Modifier.height(6.dp))
@@ -1025,9 +1025,9 @@ fun ReceiptReviewCard(
             Text(text = "Total")
             Text(
                 text = if (parsedReceipt.total != null) {
+                    "${parsedReceipt.currency} ${parsedReceipt.total}"
                 } else {
                     "Not detected"
-                    "${parsedReceipt.currency} ${parsedReceipt.total}"
                 }
             )
             Spacer(modifier = Modifier.height(6.dp))
@@ -1041,7 +1041,7 @@ fun ReceiptReviewCard(
                 Text(text = "No items detected")
             } else {
                 parsedReceipt.items.take(5).forEach { item ->
-                    Text(text = "• $item")
+                    Text(text = "â€¢ $item")
                 }
             }
             Spacer(modifier = Modifier.height(6.dp))
@@ -1092,7 +1092,7 @@ fun ExpenseItem(
 
             // Category and date
             Text(
-                text = "${expense.category} • ${expense.expenseDate}",
+                text = "${expense.category} â€¢ ${expense.expenseDate}",
                 style = MaterialTheme.typography.bodyMedium,
                 color = MaterialTheme.colorScheme.onSurfaceVariant
             )
