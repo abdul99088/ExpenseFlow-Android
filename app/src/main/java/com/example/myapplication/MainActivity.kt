@@ -1025,9 +1025,9 @@ fun ReceiptReviewCard(
             Text(text = "Total")
             Text(
                 text = if (parsedReceipt.total != null) {
-                    "${parsedReceipt.currency} ${parsedReceipt.total}"
                 } else {
                     "Not detected"
+                    "${parsedReceipt.currency} ${parsedReceipt.total}"
                 }
             )
             Spacer(modifier = Modifier.height(6.dp))
